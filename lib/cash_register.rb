@@ -39,7 +39,7 @@ class CashRegister
     @total -= @price
     when @total == 0
       return 0.to_f
-    
+    end
   end
   
   
