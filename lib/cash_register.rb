@@ -45,7 +45,7 @@ class CashRegister
       
       
   def void_last_transaction
-  @total.pop.to_f
+  @total - @cart[item_info][:last]
   end
   
   
