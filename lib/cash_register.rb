@@ -45,7 +45,7 @@ class CashRegister
       
       
   def void_last_transaction
-  @total.pop
+  @total.pop.to_f
   end
   
   
