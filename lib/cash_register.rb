@@ -30,7 +30,8 @@ class CashRegister
     
   
    def items
-    @total - @last_t
+    @total =- @last_t
+    @total
   end 
       
       
