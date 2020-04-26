@@ -14,7 +14,8 @@ class CashRegister
    @title = title
    @cart << title
    @total += price*quantity
-   
+   @last_t = @total
+   @total
   end
   
   def apply_discount
@@ -29,7 +30,7 @@ class CashRegister
     
   
    def items
- 
+    @total - @last_t
   end 
       
       
