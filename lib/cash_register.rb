@@ -14,6 +14,7 @@ class CashRegister
    @title = title
    @cart << title
    @total += price*quantity
+   
    @last_t = @total
    @total
   end
